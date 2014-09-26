@@ -25,6 +25,7 @@ public class Test3 extends Helper_class {
 		List<WebElement> head = driver.findElement(By.cssSelector("div.navbar")).findElements(By.tagName("a"));
 		Actions y = new Actions(driver);
 		y.moveToElement(head.get(1)).build().perform();
+		sleep(2);
 	  
 	  List<WebElement> select = driver.findElement(By.cssSelector("div.pane.fashion.show")).findElements(By.tagName("a"));
 	  System.out.println("TOTAL NUMBER OF ITEMS IN THE BANNER ARE : " +select.size());
